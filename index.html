@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <p class="subtitle">Create strong and unique passwords easily.</p>
+        <p class="description">Generate secure passwords by combining randomly selected words from the list with unique random numbers. Customize the list as needed.</p>
+        <form id="password-generator-form">
+            <label for="word-list">Word List (Edit if necessary):</label>
+            <div class="textarea-container">
+                <textarea id="word-list" rows="5" cols="30" readonly></textarea>
+            </div>
+            <button type="button" id="generate-password">Generate Password</button>
+            <div class="password-box">
+                <span id="generated-password" title="Click to copy"></span>
+            </div>
+        </form>
+        <div class="toast" id="toast">Password copied to clipboard</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
